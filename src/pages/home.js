@@ -54,16 +54,6 @@ export default class Home extends Component {
             .catch(err => {
                 console.log(err);
             });
-            
-        wrapper.get('?page=2')
-            .then(res => {
-                this.setState(prevState => ({
-                    items: prevState.items.concat(res.data.results)
-                }))
-            })
-            .catch(err => {
-                console.log(err);
-            });
     }
 
 
